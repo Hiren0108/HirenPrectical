@@ -37,23 +37,46 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MVz-Hb-TFr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1793" y="388"/>
+            <point key="canvasLocation" x="2702.898550724638" y="387.72321428571428"/>
         </scene>
-        <!--Item 1-->
+        <!--All CityVC-->
         <scene sceneID="PhX-Gz-C41">
             <objects>
-                <viewController id="EV4-Ir-4gh" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AllCityVC" id="EV4-Ir-4gh" customClass="AllCityVC" customModule="HirenPrectical" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IEe-9o-H3t">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="ktq-LD-OM2">
+                                <rect key="frame" x="0.0" y="94" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="smL-2Q-3bd">
+                                <rect key="frame" x="0.0" y="150" width="414" height="663"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="74P-3n-6R1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="smL-2Q-3bd" firstAttribute="leading" secondItem="74P-3n-6R1" secondAttribute="leading" id="2cY-xX-whT"/>
+                            <constraint firstItem="ktq-LD-OM2" firstAttribute="leading" secondItem="74P-3n-6R1" secondAttribute="leading" id="6x5-Xs-66h"/>
+                            <constraint firstItem="74P-3n-6R1" firstAttribute="trailing" secondItem="smL-2Q-3bd" secondAttribute="trailing" id="Epy-tH-ZfC"/>
+                            <constraint firstItem="74P-3n-6R1" firstAttribute="bottom" secondItem="smL-2Q-3bd" secondAttribute="bottom" id="HtN-iQ-aGf"/>
+                            <constraint firstItem="ktq-LD-OM2" firstAttribute="top" secondItem="74P-3n-6R1" secondAttribute="top" constant="50" id="TYl-f0-QWA"/>
+                            <constraint firstAttribute="trailing" secondItem="ktq-LD-OM2" secondAttribute="trailing" id="UHi-YR-T2W"/>
+                            <constraint firstItem="smL-2Q-3bd" firstAttribute="top" secondItem="ktq-LD-OM2" secondAttribute="bottom" id="vqO-uM-yeZ"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="mkI-PT-6Ec"/>
+                    <navigationItem key="navigationItem" id="cz5-C9-7rC"/>
+                    <connections>
+                        <outlet property="searchBar" destination="ktq-LD-OM2" id="Ih7-ys-SzV"/>
+                        <outlet property="tblAllCity" destination="smL-2Q-3bd" id="EWG-AA-HYg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qcd-sg-Zkd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1793" y="-219"/>
+            <point key="canvasLocation" x="2702.898550724638" y="-219.64285714285714"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="o4D-mS-rhZ">
@@ -65,13 +88,31 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="EV4-Ir-4gh" kind="relationship" relationship="viewControllers" id="vVL-F2-o8D"/>
+                        <segue destination="ovx-ZS-ysf" kind="relationship" relationship="viewControllers" id="vVL-F2-o8D"/>
                         <segue destination="i2g-ns-u9c" kind="relationship" relationship="viewControllers" id="MEh-N5-J1R"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x9S-gh-1Qc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="903" y="84"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="UJK-1Q-tKf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="ovx-ZS-ysf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item 1" id="mkI-PT-6Ec"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VrC-ah-9FT">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="EV4-Ir-4gh" kind="relationship" relationship="rootViewController" id="rpf-uN-IE3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jEH-sS-vLy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1792.753623188406" y="-219.64285714285714"/>
         </scene>
     </scenes>
     <resources>

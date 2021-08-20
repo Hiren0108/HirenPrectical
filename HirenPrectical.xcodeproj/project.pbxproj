@@ -13,9 +13,16 @@
 		AC5AF28826CF6ABE001EE52D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC5AF28626CF6ABE001EE52D /* Main.storyboard */; };
 		AC5AF28A26CF6AC0001EE52D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC5AF28926CF6AC0001EE52D /* Assets.xcassets */; };
 		AC5AF28D26CF6AC0001EE52D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC5AF28B26CF6AC0001EE52D /* LaunchScreen.storyboard */; };
+		AC5AF29A26CF6D64001EE52D /* AllCityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5AF29926CF6D64001EE52D /* AllCityVC.swift */; };
+		AC5AF29F26CF6E5D001EE52D /* AllCityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5AF29D26CF6E5D001EE52D /* AllCityCell.swift */; };
+		AC5AF2A026CF6E5D001EE52D /* AllCityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC5AF29E26CF6E5D001EE52D /* AllCityCell.xib */; };
+		AC5AF2A426CF7080001EE52D /* AllCityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5AF2A326CF7080001EE52D /* AllCityModel.swift */; };
+		E1B2BED1F13F2A024EEC5364 /* Pods_HirenPrectical.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98B4FCA259D06E5F3A7A721F /* Pods_HirenPrectical.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1957A32B434C3D49518C3DF7 /* Pods-HirenPrectical.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HirenPrectical.debug.xcconfig"; path = "Target Support Files/Pods-HirenPrectical/Pods-HirenPrectical.debug.xcconfig"; sourceTree = "<group>"; };
+		98B4FCA259D06E5F3A7A721F /* Pods_HirenPrectical.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HirenPrectical.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC5AF27D26CF6ABE001EE52D /* HirenPrectical.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HirenPrectical.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC5AF28026CF6ABE001EE52D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC5AF28226CF6ABE001EE52D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,11 @@
 		AC5AF28926CF6AC0001EE52D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC5AF28C26CF6AC0001EE52D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC5AF28E26CF6AC0001EE52D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC5AF29926CF6D64001EE52D /* AllCityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCityVC.swift; sourceTree = "<group>"; };
+		AC5AF29D26CF6E5D001EE52D /* AllCityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCityCell.swift; sourceTree = "<group>"; };
+		AC5AF29E26CF6E5D001EE52D /* AllCityCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllCityCell.xib; sourceTree = "<group>"; };
+		AC5AF2A326CF7080001EE52D /* AllCityModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllCityModel.swift; sourceTree = "<group>"; };
+		DAC68BF3CF42C3B9515E7FE2 /* Pods-HirenPrectical.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HirenPrectical.release.xcconfig"; path = "Target Support Files/Pods-HirenPrectical/Pods-HirenPrectical.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1B2BED1F13F2A024EEC5364 /* Pods_HirenPrectical.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		026B1DD83352B8AC44217C66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98B4FCA259D06E5F3A7A721F /* Pods_HirenPrectical.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AC5AF27426CF6ABE001EE52D = {
 			isa = PBXGroup;
 			children = (
 				AC5AF27F26CF6ABE001EE52D /* HirenPrectical */,
 				AC5AF27E26CF6ABE001EE52D /* Products */,
+				CC4E7D345E82D030FC66E7FC /* Pods */,
+				026B1DD83352B8AC44217C66 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +79,7 @@
 		AC5AF27F26CF6ABE001EE52D /* HirenPrectical */ = {
 			isa = PBXGroup;
 			children = (
+				AC5AF29C26CF6E15001EE52D /* AllCityCell */,
 				AC5AF28026CF6ABE001EE52D /* AppDelegate.swift */,
 				AC5AF28226CF6ABE001EE52D /* SceneDelegate.swift */,
 				AC5AF28426CF6ABE001EE52D /* ViewController.swift */,
@@ -63,8 +87,29 @@
 				AC5AF28926CF6AC0001EE52D /* Assets.xcassets */,
 				AC5AF28B26CF6AC0001EE52D /* LaunchScreen.storyboard */,
 				AC5AF28E26CF6AC0001EE52D /* Info.plist */,
+				AC5AF29926CF6D64001EE52D /* AllCityVC.swift */,
+				AC5AF2A326CF7080001EE52D /* AllCityModel.swift */,
 			);
 			path = HirenPrectical;
+			sourceTree = "<group>";
+		};
+		AC5AF29C26CF6E15001EE52D /* AllCityCell */ = {
+			isa = PBXGroup;
+			children = (
+				AC5AF29D26CF6E5D001EE52D /* AllCityCell.swift */,
+				AC5AF29E26CF6E5D001EE52D /* AllCityCell.xib */,
+			);
+			name = AllCityCell;
+			sourceTree = "<group>";
+		};
+		CC4E7D345E82D030FC66E7FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1957A32B434C3D49518C3DF7 /* Pods-HirenPrectical.debug.xcconfig */,
+				DAC68BF3CF42C3B9515E7FE2 /* Pods-HirenPrectical.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +119,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC5AF29126CF6AC0001EE52D /* Build configuration list for PBXNativeTarget "HirenPrectical" */;
 			buildPhases = (
+				C42865C212766ADA5E573FDC /* [CP] Check Pods Manifest.lock */,
 				AC5AF27926CF6ABE001EE52D /* Sources */,
 				AC5AF27A26CF6ABE001EE52D /* Frameworks */,
 				AC5AF27B26CF6ABE001EE52D /* Resources */,
+				577395441D6AE6930188DE5F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,18 +173,64 @@
 			files = (
 				AC5AF28D26CF6AC0001EE52D /* LaunchScreen.storyboard in Resources */,
 				AC5AF28A26CF6AC0001EE52D /* Assets.xcassets in Resources */,
+				AC5AF2A026CF6E5D001EE52D /* AllCityCell.xib in Resources */,
 				AC5AF28826CF6ABE001EE52D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		577395441D6AE6930188DE5F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HirenPrectical/Pods-HirenPrectical-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HirenPrectical/Pods-HirenPrectical-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HirenPrectical/Pods-HirenPrectical-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C42865C212766ADA5E573FDC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HirenPrectical-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AC5AF27926CF6ABE001EE52D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC5AF2A426CF7080001EE52D /* AllCityModel.swift in Sources */,
 				AC5AF28526CF6ABE001EE52D /* ViewController.swift in Sources */,
+				AC5AF29A26CF6D64001EE52D /* AllCityVC.swift in Sources */,
+				AC5AF29F26CF6E5D001EE52D /* AllCityCell.swift in Sources */,
 				AC5AF28126CF6ABE001EE52D /* AppDelegate.swift in Sources */,
 				AC5AF28326CF6ABE001EE52D /* SceneDelegate.swift in Sources */,
 			);
@@ -283,6 +376,7 @@
 		};
 		AC5AF29226CF6AC0001EE52D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1957A32B434C3D49518C3DF7 /* Pods-HirenPrectical.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +396,7 @@
 		};
 		AC5AF29326CF6AC0001EE52D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAC68BF3CF42C3B9515E7FE2 /* Pods-HirenPrectical.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
